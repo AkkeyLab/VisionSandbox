@@ -62,13 +62,13 @@ private final class ReceiptAnalyzeViewController: UIViewController {
         imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 
-        segmentedControl.addTarget(self, action: #selector(didCHangeSegmentedValue), for: .valueChanged)
+        segmentedControl.addTarget(self, action: #selector(didChangeSegmentedValue), for: .valueChanged)
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         segmentedControl.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         segmentedControl.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
 
-    @objc func didCHangeSegmentedValue() {
+    @objc func didChangeSegmentedValue() {
         guard let imageType = ImageType(rawValue: segmentedControl.selectedSegmentIndex) else {
             return
         }
