@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "craig_federighi.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
